@@ -2,8 +2,8 @@ version: '3'
 
 services:
     # Frontend
-    web-db:
-        image: jitsi/web-db:latest
+    webdb:
+        build: ./web-db
         restart: ${RESTART_POLICY}
         ports:
             - '${HTTP_PORT}:80'
